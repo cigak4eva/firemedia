@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Firemedia</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        var imagens = ["chuu.jpg", "pele.jpg", "timao.png", "filme.jpg", "kevin.webp", "ghostface.jpg", "spider.webp", "minecraft.jpg", "deadpool.jpg", "beatles.jpg"];
+        var indiceAtual = -1;
+
+        function trocar(){    
+        var indiceAleatorio;
+        do {
+            indiceAleatorio = Math.floor(Math.random() * imagens.length);
+        } while (indiceAleatorio === indiceAtual); 
+        
+        document.getElementById("figura").src = imagens[indiceAleatorio];
+        indiceAtual = indiceAleatorio; 
+    }
+    </script>
+
+</head>
+
+
+
+<body>   
+
+    <a href="index.html"><img class="img" src="mini logo.png" alt=""></a>
+    <img src="SLOGAN.png" class="slogan" alt="slogan escrito firemedia">
+
+    <button onclick="trocar()">Sua imagem do dia</button>
+    <br><br>
+
+        <img id="figura" src="filme.jpg" width="450" height="230"/>
+
+
+
+    <div class="search-box">
+        <input type="text" class="search-txt" placeholder="Pesquisar">
+        <a href="" target="_blank" hidden></a>
+
+        <div class="quadrado">
+            <figure id="quadrado">
+            </figure>
+        </div>
+
+        <div class="quadrado2">
+            <figure id="quadrado2">
+            </figure>
+        </div>
+
+        <div class="container">
+            <figure id="tigre">
+                <img src="energumeno.jpeg" alt="Tigre">
+            </figure>
+        </div>
+
+    <section class="txt">
+        
+    <h2>Você sabia que...</h2>
+    <p>Os Energumeno são os maiores felinos do mundo. Os machos podem pesar até 300 kg e medir mais de 3 metros de comprimento, da cabeça à ponta da cauda</p>
+
+    </section>
+
+    <h1>Páginas</h1>
+
+    <div class="pags">
+        <ul>
+            <li>ler sobre <a href="f0xey.html">F0xey</a></li> 
+         </ul>
+     
+         <ul1>
+            <li>ler sobre <a href="garcharilhos.html">garcharilhos</a></li> 
+         </ul1>
+         
+          <ul2>
+             <li>ler sobre <a href="C4S.html">C4S</a></li> 
+          </ul2>
+     
+          <ul3>
+             <li>ler sobre <a href="redyykg.html">Redyykg</a></li> 
+          </ul3>
+     
+          <ul4>
+             <li>ler sobre <a href="patolino mago.html">Patolino, O mago</a></li> 
+          </ul4>
+     
+          <ul5>
+             <li>ler sobre <a href="dating on elias.html">Dating on elias</a></li> 
+          </ul5>
+    </div>
+
+</html>
